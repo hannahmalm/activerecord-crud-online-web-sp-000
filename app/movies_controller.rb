@@ -29,8 +29,6 @@ def can_be_created_in_a_block(args = {:title => "Home Alone", :release_date => 1
   # title == "Home Alone"
   # release_date == 1990
   Movie.create(:title, :release_date) do |m|
-    m.title = "The Room"
-    m.release_date = 2003
   end
 end
 
